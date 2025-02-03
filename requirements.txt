@@ -7,3 +7,5 @@ llama-index-vector-stores-chroma==0.4.0
 llama-index-llms-huggingface==0.4.0
 sec-edgar-downloader==5.0.2
 streamlit==1.40.1
+openai==1.57.0
+
