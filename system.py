@@ -1,3 +1,7 @@
+import pysqlite3
+import sys
+sys.modules["sqlite3"] = sys.modules.pop("pysqlite3")
+                                         
 import time
 from llama_index.core import QueryBundle
 from llama_index.core.schema import TextNode
@@ -9,7 +13,7 @@ import chromadb
 from sentence_transformers import SentenceTransformer, CrossEncoder
 
 from config import VECTOR_STORE_DIR, EMBED_MODEL_NAME, LLM_MODEL_NAME
-from together import Together
+# from together import Together
 
 
 # import os
